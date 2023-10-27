@@ -1,0 +1,82 @@
+*:focus {
+	outline: none;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: hsl(0, 0%, 94%);
+}
+
+.calculator {
+	background-color: white;
+	border-radius: 10px 10px 50px 10px;
+	padding: 25px;
+	max-width: 500px;
+	margin: auto;
+}
+
+.calculator .inputs {
+	padding: 0px 100px 40px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 20px;
+	border-bottom: solid 1px hsl(0, 1%, 44%);
+	position: relative;
+}
+
+.calculator .inputs label {
+	color: hsl(0, 1%, 44%);
+	font-size: 0.8rem;
+}
+
+.calculator .inputs input {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	max-width: 80px;
+	min-width: 20px;
+	border-radius: 3px;
+	border: 1px gray solid;
+}
+
+.calculator .inputs button {
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+	background-color: hsl(259, 100%, 65%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border: none;
+	font-size: 2rem;
+	border-radius: 50%;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	transform: translateY(50%);
+	cursor: pointer;
+}
+
+@media (max-width: 500px) {
+	.calculator .inputs button {
+		right: 50%;
+		transform: translate(50%, 50%);
+	}
+}
+
+.calculator .age {
+	font-size: 32px;
+	font-weight: 800;
+	padding-top: 25px;
+}
+
+.calculator .age p {
+	margin: 0px 0px 15px 0px;
+	font-style: italic;
+}
+
+.calculator .age p > span {
+	color: hsl(259, 100%, 65%);
+}
