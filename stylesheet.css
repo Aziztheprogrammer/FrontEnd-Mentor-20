@@ -11,7 +11,7 @@ body {
 	background-color: white;
 	border-radius: 10px 10px 50px 10px;
 	padding: 25px;
-	max-width: 500px;
+	width: fit-content;
 	margin: auto;
 }
 
@@ -28,6 +28,7 @@ body {
 .calculator .inputs label {
 	color: hsl(0, 1%, 44%);
 	font-size: 0.8rem;
+	font-weight: 400;
 }
 
 .calculator .inputs input {
@@ -67,7 +68,7 @@ body {
 }
 
 .calculator .age {
-	font-size: 32px;
+	font-size: 48px;
 	font-weight: 800;
 	padding-top: 25px;
 }
